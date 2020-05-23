@@ -55,24 +55,29 @@
             border: 1px solid gray;
             text-indent: 20px;               }
       #submit {
-        background-color: #4caf50;
+        
         border: none;
         background-color: hsl(223, 87%, 63%);
         color: white;
         border-radius: 30px;
+        height: 7vh;
         padding: 15px 32px;
+        padding-bottom: 32px;
         text-align: center;
         text-decoration: none;
-        display: inline-block;
         font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
               }
       form{margin-bottom: 10vh;}
       #illustration img{max-width: 50%;}        
       footer{color: hsl(0, 0%, 49%);}
       #socials{margin-top: 10vh; margin-bottom: 5vh;}
       #socials a{margin-right: 3vw;}
+      .filter-blue{filter: invert(46%) sepia(50%) saturate(3776%) hue-rotate(208deg) brightness(100%) contrast(91%);}
+      
+@media (max-width:1200px){
+     #mail{display:block; margin: auto; width:60vh; margin-bottom: 3vh;}
+     #submit{width:60vh;}  
+     #illustration img{max-width: 80%;}                    }
     </style>
   </head>
   <body>
@@ -91,9 +96,9 @@
     </form>  
     <div id="illustration"><img src="images/illustration-dashboard.png" alt="image"></div>
     <div id="socials"> 
-      <a href=""><img src="images/facebook.svg" alt=""></a>
-      <a href=""><img src="images/twitter.svg" alt=""></a>
-      <a href=""><img src="images/instagram.svg" alt=""></a>
+      <a href=""><img src="images/facebook.svg" alt="facebook"class="filter-blue"/></a>
+      <a href=""><img src="images/twitter.svg" alt="twitter"class="filter-blue"/></a>
+      <a href=""><img src="images/instagram.svg" alt="instagram"class="filter-blue"/></a>
     </div>
     <footer>&copy; Copyright Ping. All rights
     reserved.</footer>
@@ -108,3 +113,4 @@
     </footer>
   </body>
 </html>
+
